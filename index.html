@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CV Sinh Viên - Nguyễn Thanh Tùng</title>
+<style>
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f9fafb;
+    color: #1f2937;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover, a:focus {
+    color: #1d4ed8;
+    outline-offset: 2px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 48px auto;
+    padding: 0 24px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+    color: #111827;
+  }
+  header p {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-top: 0;
+  }
+  .contact-links {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .contact-links a {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  section {
+    background: #ffffff;
+    padding: 32px 32px 40px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+  }
+  section h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    color: #1e40af;
+  }
+
+  .about p {
+    font-size: 1rem;
+    color: #374151;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .skill {
+    background: #e0e7ff;
+    color: #4338ca;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  .timeline-item {
+    margin-bottom: 24px;
+  }
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  .degree {
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #111827;
+    margin: 0;
+  }
+  .school {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2563eb;
+    margin: 4px 0 8px 0;
+  }
+  .date-range {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 12px;
+  }
+  .edu-description {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin: 0;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-top: 64px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 640px) {
+    header h1 {
+      font-size: 2.25rem;
+    }
+    section {
+      padding: 24px 20px 32px;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <h1>Nguyễn Thanh Tùng</h1>
+      <p>Sinh viên năm 2 - Công nghệ thông tin</p>
+      <nav class="contact-links" aria-label="Thông tin liên hệ">
+        <a href="mailto:tungnt0575@ut.edu.vn" aria-label="Gửi email đến Nguyễn Thanh Tùng">tungnt0575@ut.edu.vn</a>
+        <a href="tel:+84908651056" aria-label="Gọi điện cho Nguyễn Thanh Tùn">+84 908 651 056</a>
+        <a href="https://github.com/ThanhTunq08" target="_blank" rel="noopener" aria-label="Trang GitHub của Nguyễn Thanh Tùng">GitHub</a>
+      </nav>
+    </header>
+
+    <section class="about" aria-labelledby="objective-heading">
+      <h2 id="objective-heading">Mục Tiêu Nghề Nghiệp</h2>
+      <p>
+        Tìm kiếm cơ hội thực tập và học hỏi trong lĩnh vực công nghệ thông tin để phát triển kỹ năng lập trình và áp dụng kiến thức học tập vào thực tế.
+      </p>
+    </section>
+
+    <section class="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Học Vấn</h2>
+      <article class="timeline-item" tabindex="0">
+        <h3 class="degree">Công nghệ Thông tin (Đang học)</h3>
+        <p class="school">Đại học Giao Thông Vận Tải TP.HCM - UTH</p>
+        <p class="date-range">2022 - Hiện tại</p>
+        <p class="edu-description">
+          Sinh viên năm 2, tập trung học các môn lập trình, cấu trúc dữ liệu, và phát triển web.
+        </p>
+      </article>
+    </section>
+
+    <section class="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Kỹ Năng</h2>
+      <div class="skills-list" role="list">
+        <span class="skill" role="listitem">C++</span>
+        <span class="skill" role="listitem">Java</span>
+        <span class="skill" role="listitem">HTML &amp; CSS</span>
+        <span class="skill" role="listitem">Microsoft Word</span>
+        <span class="skill" role="listitem">Microsoft Excel</span>
+        <span class="skill" role="listitem">Kỹ năng giao tiếp</span>
+        <span class="skill" role="listitem">Làm việc nhóm</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Nguyễn Thanh Tùng. All rights reserved.
+  </footer>
+</body>
+</html>
+
